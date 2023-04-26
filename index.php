@@ -12,17 +12,16 @@
     </header>
     <nav>
       <ul>
-        <li><a href="#">Accueil</a></li>
-        <li><a href="#">Randonnées</a></li>
-        <li><a href="#">se connecter</a></li>
+        <li><a href="Index.php">Accueil</a></li>
+        <li><a href="Randonne.php">Randonnée</a></li>
+        <li><a href="Contribuer.php">contribuer</a></li>
+        <li><a href="Connexion.php">Connexion</a></li>
       </ul>
     </nav> 
     <section>
       <h2>Bienvenue sur notre site de randonnée</h2>
       <p>Recherchez et trouvez les meilleurs parcours de randonnée dans votre région !</p>
-      <form>
-        
-      </form>
+     
     </section>
   </div>
 </body>
