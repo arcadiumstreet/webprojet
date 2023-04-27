@@ -6,7 +6,7 @@
 }
 
 header {
-    background-image: url(./../photos/photo\ montagne.png);
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(./../photos/photo\ montagne.png);
     height: 100vh;
     background-size: cover;
     background-position: center;   
@@ -35,4 +35,73 @@ header {
     color: rgb(16, 5, 223);
     font-weight: bold;
     font-size: 2rem;
+}
+
+.principale{
+    max-width: 114rem;
+    margin: 0 auto;
+}
+
+.titre{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.titre h1{
+    color: #fff;
+    font-size: 50px
+}
+
+.button{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.button a{
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+}
+
+.bouton-telecharger{
+    transition: 0.6s ease;
+}
+
+.btn:hover{
+    background-color: #fff;
+    color: black;
+}
+
+nav ul{
+    list-style: none;
+    float: right;
+    display: flex;
+    margin-top: 20px;
+}
+
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border: 1px solid white;
+    margin: 10px;
+    font-weight: 500;
+    transition: 0.6s ease;
+}
+
+nav ul li a:hover{
+    background-color: #fff;
+    color: black;
+}
+
+nav ul li.active a{
+    background-color: #fff;
+    color: black;
 }
