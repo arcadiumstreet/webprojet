@@ -1,88 +1,72 @@
-#wrapper {
-	padding:5px ;
-	margin:auto;
-    width:984px;
-	font-family: Arial, Verdana, sans-serif;
-	background-color:white;
-}
-
-body {
-	background-color:lightblue;
-}
-
-header {
-	height:100px;
-	text-align:center;
-	background-image: url("../images/FCCB.png");
-}
-
-nav {
-   list-style-type: none;  
-   background-color: blue;
-  /*text-align: right;*/
-   color:white;
-   height:25px;
-}
-
-nav li {
-   display: inline;
-}
-nav  li ~ li {
-   display: inline;
-   padding-left:15px;
-}
-
-nav ul {
-   margin:0;
-/*   float:left;*/
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: century;
+  background-color: rgb(227, 224, 0);
 }
 
 
-nav  a {
-    color: white;
-	text-decoration: none;
+.logo a{
+  color: #fff;
+  padding: 0px 20px;
+  border: 1px solid #fff;
+  position: absolute;
+  top: 10px;
+  left :10px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 900;
+  text-shadow: rgba(0, 0, 0, 0.7);
 }
 
-
-nav  a:hover {
-	text-decoration: underline;
+.logo .R {
+  color: rgb(199, 48, 10);
+  font-weight: bold;
+  font-size: 2rem;
 }
 
-section {
-  clear:both;
-}
-section h1 {
-   text-align:center;
-   color:red;
-   background-color:cyan; /*#81F7F3; */
+.logo .F {
+  color: rgb(16, 5, 223);
+  font-weight: bold;
+  font-size: 2rem;
 }
 
-
-section > ul {
-  list-style-type: none;
-  margin:0px;
-  padding:0px;
+.principale{
+  max-width: 114rem;
+  margin: 0 auto;
 }
 
-section > ul > li{
-  clear:both;
-  border-style:solid;
-  height:200px;
-  margin-bottom:10px;
+.btn:hover{
+  background-color: #fff;
+  color: black;
 }
 
-  
-section  > ul > li> ul > li:first-child{
-  font-weight:bold;
-}
-
-img {
+nav ul{
+  list-style: none;
   float: right;
-  margin: 15px;
+  display: flex;
+  margin-top: 20px;
 }
 
-nav form {
-	display: inline;
-	float:right;
-	background-color: blue;
+
+nav ul li a{
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  border: 1px solid white;
+  margin: 10px;
+  font-weight: 500;
+  transition: 0.6s ease;
+}
+
+nav ul li a:hover{
+  background-color: #fff;
+  color: black;
+}
+
+nav ul li.active a{
+  background-color: #fff;
+  color: black;
 }

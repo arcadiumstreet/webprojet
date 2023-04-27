@@ -2,22 +2,26 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8"/>
-  <link rel="stylesheet" href="styles/Randonnée.css"/>
+  <link rel="stylesheet" href="styles/connexion.css"/>
   <title>Page d'accueil</title>
 </head>
 <body>
-  <div id="wrapper">
+  <div class="principale">
     <header>
-      <h1>Parcours de randonnée</h1>
-    </header>
-    <nav>
+    <div class="logo">
+        <a href="index.php"><span class="R">R</span><span>d</span><span class="F">F</span></a>
+      </div>
+      <nav>
       <ul>
         <li><a href="Index.php">Accueil</a></li>
         <li><a href="Randonne.php">Randonnée</a></li>
         <li><a href="Contribuer.php">Contribuer</a></li>
-        <li><a href="Connexion.php">Connexion</a></li>
+        <li class="active"><a href="Connexion.php">Connexion</a></li>
       </ul>
-    </nav> 
+    </nav>
+    <div><h1>Parcours de randonnée</h1></div>
+    </header>
+     
     <section>
       <h2>Connexion : </h2>
           <form action="Connexion.php" method="post">
