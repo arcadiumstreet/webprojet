@@ -20,8 +20,19 @@
     </nav> 
     <section>
       <p>Randonne</p>
-     
+      <p>je pense qu'on peut essayer de faire dans un tableau pour avoir l'image qui se palce bien</p>
+    <table>
+    <tr>
+     <td>je suis la description </td>
+     <td rowspan="2" style="border : 1px solid #333 ">je suis l'image</td>
+     </tr>
+     <tr>
+     <td >je pense pas exactement genre autre chose </td>
+
+     </table>
+
     </section>
   </div>
+  <a href="#haut">haut de page</a>
 </body>
 </html>

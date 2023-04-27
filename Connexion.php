@@ -14,13 +14,18 @@
       <ul>
         <li><a href="Index.php">Accueil</a></li>
         <li><a href="Randonne.php">Randonnée</a></li>
-        <li><a href="Contribuer.php">contribuer</a></li>
+        <li><a href="Contribuer.php">Contribuer</a></li>
         <li><a href="Connexion.php">Connexion</a></li>
       </ul>
     </nav> 
     <section>
-      <p>Connexion</p>
-     <h1>fruebcuebfueb</h1>
+      <h2>Connexion : </h2>
+          <form action="Connexion.php" method="post">
+            Identifiant : <input type="text" size="16" name="iden" />
+            <input type="submit" value="Se connecter" />
+            </br>
+            Premiere connexion : <input type="checkbox" id = "premiere">
+          </form>
     </section>
   </div>
 </body>

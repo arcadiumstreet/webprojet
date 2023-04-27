@@ -14,13 +14,31 @@
       <ul>
         <li><a href="Index.php">Accueil</a></li>
         <li><a href="Randonne.php">Randonnée</a></li>
-        <li><a href="Contribuer.php">contribuer</a></li>
+        <li><a href="Contribuer.php">Contribuer</a></li>
         <li><a href="Connexion.php">Connexion</a></li>
       </ul>
     </nav> 
     <section>
-      <p>Contribuer</p>
-     
+      <h2>Ajouter une randonnée</h2>
+      <form action="#" method="post" enctype="multipart/form-data">
+  <p>
+    <label for="form-description">Nom de la randonnée :</label>
+    <input id="form-description" type="text" name="description" size="40" />
+  </p>
+  <p>
+    <label for="form-description">Description de la randonnée :</label>
+    <input id="form-description" type="text" name="description" size="40" />
+  </p>
+  <p>
+    <label for="form-description">Adresse du point de départ :</label>
+    <input id="form-description" type="text" name="description" size="40" />
+  </p>
+  <p>
+    <label for="form-image">Image :</label>
+    <input id="form-image" type="file" name="image" size="40" />
+  </p>
+  <p><button type="submit">AJOUTER</button></p>
+</form>
     </section>
   </div>
 </body>
