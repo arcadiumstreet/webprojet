@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8"/>
-  <link rel="stylesheet" href="styles/randonner.css"/>
+  <link rel="stylesheet" href="styles/randonne.css"/>
   <title>Liste des randos</title>
 </head>
 <body>
@@ -13,7 +13,7 @@
       </div>
       <nav>
         <ul>
-          <li><a href="Index.php">Accueil</a></li>
+          <li><a href="index.php">Accueil</a></li>
           <li class="active"><a href="Randonne.php">Randonnée</a></li>
           <li><a href="Contribuer.php">contribuer</a></li>
           <li><a href="Connexion.php">Connexion</a></li>
