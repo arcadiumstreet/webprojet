@@ -55,7 +55,6 @@ body {
     overflow-y :hidden;
     height: 350px;
 }
-
 .defile:hover{
     overflow-y: scroll;
 }
