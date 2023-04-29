@@ -20,28 +20,26 @@
         </ul>
       </nav>
       <br>
-       <h1 class="On_centre">Parcours de randonnée</h1>
+       <h1 class="centre">Parcours de randonnée</h1>
     </header>
-
-   
     
     <main>
       
       <section>
         
         <h2>Ajouter une randonnée</h2>
-          <form action="#" method="post" enctype="multipart/form-data">
+          <form action="ContribuerBis.php" method="post" enctype="multipart/form-data">
             <p>
               <label for="form-description">Nom de la randonnée :</label>
-              <input id="form-description" type="text" name="description" size="40" />
+              <input id="form-nom" type="text" name="nom" size="40" />
             </p>
             <p>
               <label for="form-description">Description de la randonnée :</label>
               <input id="form-description" type="text" name="description" size="40" />
             </p>
             <p>
-              <label for="form-description">Adresse du point de départ :</label>
-              <input id="form-description" type="text" name="description" size="40" />
+              <label for="form-adresse">Adresse du point de départ :</label>
+              <input id="form-adresse" type="text" name="adresse_depart" size="40" />
             </p>
             <p>
               <label for="form-image">Image :</label>
@@ -51,7 +49,7 @@
           </form>
       </section>
     </main>
-    
+
   </div>  
 </body>
 </html>

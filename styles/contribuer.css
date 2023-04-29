@@ -48,7 +48,7 @@
     display: flex;
     margin-top: 20px;
   }
-  
+
   
   nav ul li a{
     text-decoration: none;
@@ -61,6 +61,13 @@
     transition: 0.6s ease;
   }
   
+  .centre{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
   nav ul li a:hover{
     background-color: #fff;
     color: black;
