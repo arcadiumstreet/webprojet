@@ -1,0 +1,58 @@
+.logo a{
+    color: #fff;
+    padding: 0px 20px;
+    border: 1px solid #fff;
+    position: absolute;
+    top: 10px;
+    left :10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 900;
+    text-shadow: rgba(0, 0, 0, 0.7);
+}
+
+.logo .R {
+    color: rgb(199, 48, 10);
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.logo .F {
+    color: rgb(16, 5, 223);
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.principale{
+    max-width: 114rem;
+    margin: 0 auto;
+}
+
+nav ul{
+    list-style: none;
+    float: right;
+    display: flex;
+    margin-top: 20px;
+}
+
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border: 1px solid white;
+    margin: 10px;
+    font-weight: 500;
+    transition: 0.6s ease;
+}
+
+nav ul li a:hover{
+    background-color: #fff;
+    color: black;
+}
+
+nav ul li.active a{
+    background-color: #fff;
+    color: black;
+}

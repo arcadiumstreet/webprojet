@@ -2,6 +2,7 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8"/>
+  <link rel="stylesheet" href="styles/header.css"/>
   <link rel="stylesheet" href="styles/index.css"/>
   <title>Page d'accueil</title>
 </head>
@@ -29,57 +30,35 @@
     </div>
   </header>
 </br>
-<section class="defile">
-<p>dhegfzvdgedhegfzvdgedhegfzvdgedhegfzvdgedhegfzvdgedhegfzvdgedhegfzvdgedhegfzvdgedhegfzvdgedhegfzvdgedhegfzvdgedhegfzvdgedhegfzvdgedhegfzvdgedhegfzvdgedhegfzvdgedhegfzvdgedhegfzvdge</p>
-<p>dhegfzvdgedhegfzvdgedhegfzvdgedhegfzvdgedhegfzvdgedhegfzvdge</p>
-<p>dhegfzvdge</p>
-<p>dhegfzvdgedhegfzvdgedhegfzvdgedhegfzvdgedhegfzvdgedhegfzvdge</p>
-<p>dhegfzvdge</p>
-<p>dhegfzvdgedhegfzvdgedhegfzvdgedhegfzvdgedhegfzvdgedhegfzvdge</p>
-<p>dhegfzvdge</p>
+  <main>
+    <section class="defile">
+      <p>dhegfzvdgedhegfzvdgedhegfzvdgedhegfzvdgedhegfzvdgedhegfzvdgedhegfzvdgedhegfzvdgedhegfzvdgedhegfzvdgedhegfzvdgedhegfzvdgedhegfzvdgedhegfzvdgedhegfzvdgedhegfzvdgedhegfzvdgedhegfzvdge</p>
+      <p>dhegfzvdgedhegfzvdgedhegfzvdgedhegfzvdgedhegfzvdgedhegfzvdge</p>
+      <p>dhegfzvdge</p>
+      <p>dhegfzvdgedhegfzvdgedhegfzvdgedhegfzvdgedhegfzvdgedhegfzvdge</p>
+      <p>dhegfzvdge</p>
+      <p>dhegfzvdgedhegfzvdgedhegfzvdgedhegfzvdgedhegfzvdgedhegfzvdge</p>
+      <p>dhegfzvdge</p>
 
-<p>dhegfzvdge</p>
-<p>dhegfzvdge</p>
-<p>dhegfzvdge</p>
-<p>dhegfzvdge</p>
-<p>dhegfzvdge</p>
+      <p>dhegfzvdge</p>
+      <p>dhegfzvdge</p>
+      <p>dhegfzvdge</p>
+      <p>dhegfzvdge</p>
+      <p>dhegfzvdge</p>
 
-<p>dhegfzvdge</p>
-<p>dhegfzvdge</p>
-<p>dhegfzvdge</p>
+      <p>dhegfzvdge</p>
+      <p>dhegfzvdge</p>
+      <p>dhegfzvdge</p>
 
-<p>dhegfzvdge</p>
-<p>dhegfzvdge</p>
-<p>dhegfzvdge</p>
+      <p>dhegfzvdge</p>
+      <p>dhegfzvdge</p>
+      <p>dhegfzvdge</p>
 
-<p>dhegfzvdge</p>
-<p>dhegfzvdge</p>
-<p>dhegfzvdge</p>
+      <p>dhegfzvdge</p>
+      <p>dhegfzvdge</p>
+      <p>dhegfzvdge</p>
 
-</section>
-<!--
-  <div id="wrapper">
-    <header>
-      <h1 class="active">Parcours de randonnée</h1>
-      <nav>
-        <ul>
-          <li><a href="Index.php">Accueil</a></li>
-          <li><a href="Randonne.php">Randonnée</a></li>
-          <li><a href="Contribuer.php">contribuer</a></li>
-          <li><a href="Connexion.php">Connexion</a></li>
-        </ul>
-      </nav>
-    </header>
-     
-    <section>
-      <h2>Bienvenue sur notre site de randonnée</h2>
-      <p>Recherchez et trouvez les meilleurs parcours de randonnée dans votre région !</p>
-     
     </section>
-  </div>
-
-  <a href="#haut">haut de page</a>
-
--->
+  </main>
 </body>
 </html>

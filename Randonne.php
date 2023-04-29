@@ -2,6 +2,7 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8"/>
+  <link rel="stylesheet" href="styles/header.css"/>
   <link rel="stylesheet" href="styles/randonne.css"/>
   <title>Liste des randos</title>
 </head>

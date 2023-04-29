@@ -2,6 +2,7 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8"/>
+  <link rel="stylesheet" href="styles/header.css"/>
   <link rel="stylesheet" href="styles/connexion.css"/>
   <title>Page d'accueil</title>
 </head>
