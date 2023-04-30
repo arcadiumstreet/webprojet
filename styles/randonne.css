@@ -3,5 +3,27 @@
   margin: 0;
   box-sizing: border-box;
   font-family: century;
-  background-color: rgb(227, 224, 0);
+}
+
+body {
+  background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(./../photos/balisage.jpg);
+  background-attachment: fixed ;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.centre{
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+main {
+  position: absolute;
+  top: 65%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  height: 350px;;           /* attention !!!!  ici si il est trop grand on pourra scroller sur la page alors que l'on en a pas besoin */
 }

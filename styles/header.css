@@ -56,3 +56,10 @@ nav ul li.active a{
     background-color: #fff;
     color: black;
 }
+
+input, select, textarea {
+    color: black;
+}
+.white-text{
+    color:white;
+}

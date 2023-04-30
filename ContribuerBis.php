@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="styles/contribuer.css"/>
   <title>Page d'accueil</title>
 </head>
-<body>
+<body class="white-text">
     <header>
     <div class="principale">
       <div class="logo">
@@ -22,7 +22,7 @@
       </nav>
       <br>
       <div>
-       <h1 >Parcours de randonnée</h1>
+       <h1>Parcours de randonnée</h1>
       </div>
       </div>
     </header>

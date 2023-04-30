@@ -3,14 +3,53 @@
     margin: 0;
     box-sizing: border-box;
     font-family: century;
-    background-color: rgb(73, 204, 2);
 }
 
 
 body {
-    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(./../photos/rando_automne.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(./../photos/etoiles.jpeg);
     background-attachment: fixed ;
     height: 100vh;
     background-size: cover;
     background-position: center;
 }
+
+main {
+    position: absolute;
+    top: 65%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    height: 350px;;           /* attention !!!!  ici si il est trop grand on pourra scroller sur la page alors que l'on en a pas besoin */
+  }
+
+  
+  .centre{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+input[type="submit"]::-webkit-file-upload-button {
+    visibility: hidden;
+  }
+  
+  input[type="submit"] {
+    background-color: #0e1bd8;
+    color: #FFFFFF;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #0800fb;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:active {
+    background-color: #452bb8;
+  }
+  

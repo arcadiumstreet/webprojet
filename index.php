@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="styles/index.css"/>
   <title>Page d'accueil</title>
 </head>
-<body>
+<body class="white-text">
   <header>
     <div class="principale">
       <div class="logo">

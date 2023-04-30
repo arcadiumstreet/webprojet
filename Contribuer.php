@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="styles/contribuer.css"/>
   <title>Page d'accueil</title>
 </head>
-<body>
+<body class="white-text">
     <header>
     <div class="principale">
       <div class="logo">
@@ -47,8 +47,9 @@
               <label for="form-image">Image :</label>
               <input id="form-image" type="file" name="image" size="40" />
             </p>
-            <p><button type="submit">AJOUTER</button></p>
+            <p><button type="submit" class="btnAjout">AJOUTER</button></p>
           </form>
+          
       </section>
     </main>  
 </body>

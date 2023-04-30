@@ -6,7 +6,8 @@
   <link rel="stylesheet" href="styles/connexion.css"/>
   <title>Page d'accueil</title>
 </head>
-<body>
+
+<body class="white-text">
   <header>
     <div class="principale">
       <div class="logo">
@@ -20,7 +21,7 @@
         <li class="active"><a href="Connexion.php">Connexion</a></li>
       </ul>
     </nav>
-    <div><h1>Parcours de randonnée</h1></div>
+    <h1 class="centre">Connectez vous pour ajouter des randonnées</h1>
     </div>
   </header>
   
