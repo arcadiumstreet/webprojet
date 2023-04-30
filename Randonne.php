@@ -7,8 +7,8 @@
   <title>Liste des randos</title>
 </head>
 <body>
-  <div class="principale">
     <header>
+    <div class="principale">
       <div class="logo">
         <a href="index.php"><span class="R">R</span><span>d</span><span class="F">F</span></a>
       </div>
@@ -21,6 +21,7 @@
         </ul>
       </nav>
     <h1>Parcours de randonnée</h1>
+    </div>
     </header>
     
     <section>
@@ -37,7 +38,6 @@
      </table>
 
     </section>
-  </div>
   <a href="#haut">haut de page</a>
 </body>
 </html>

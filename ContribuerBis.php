@@ -7,8 +7,8 @@
   <title>Page d'accueil</title>
 </head>
 <body>
-<div class="principale">
     <header>
+    <div class="principale">
       <div class="logo">
         <a href="index.php"><span class="R">R</span><span>d</span><span class="F">F</span></a>
       </div>
@@ -23,6 +23,7 @@
       <br>
       <div>
        <h1 >Parcours de randonnée</h1>
+      </div>
       </div>
     </header>
     <main>
@@ -66,9 +67,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         }
     
 ?> </h2>
-    </main>
-    
-  </div>  
+    </main>  
 </body>
 </html>
 

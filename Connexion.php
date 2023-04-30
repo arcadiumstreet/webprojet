@@ -7,9 +7,9 @@
   <title>Page d'accueil</title>
 </head>
 <body>
-  <div class="principale">
-    <header>
-    <div class="logo">
+  <header>
+    <div class="principale">
+      <div class="logo">
         <a href="index.php"><span class="R">R</span><span>d</span><span class="F">F</span></a>
       </div>
       <nav>
@@ -21,17 +21,20 @@
       </ul>
     </nav>
     <div><h1>Parcours de randonnée</h1></div>
-    </header>
-     
-    <section>
-      <h2>Connexion : </h2>
-          <form action="Connexion.php" method="post">
-            Identifiant : <input type="text" size="16" name="iden" />
-            <input type="submit" value="Se connecter" />
-            </br>
-            Premiere connexion : <input type="checkbox" id = "premiere">
-          </form>
-    </section>
-  </div>
+    </div>
+  </header>
+  
+
+    <main>
+      <section>
+        <h2>Connexion : </h2>
+            <form action="Connexion.php" method="post">
+              Identifiant : <input type="text" size="16" name="iden" />
+              <input type="submit" value="Se connecter" />
+              </br>
+              Premiere connexion : <input type="checkbox" id = "premiere">
+            </form>
+      </section>
+    </main>
 </body>
 </html>

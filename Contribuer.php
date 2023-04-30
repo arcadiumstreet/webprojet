@@ -7,8 +7,8 @@
   <title>Page d'accueil</title>
 </head>
 <body>
-<div class="principale">
     <header>
+    <div class="principale">
       <div class="logo">
         <a href="index.php"><span class="R">R</span><span>d</span><span class="F">F</span></a>
       </div>
@@ -22,6 +22,7 @@
       </nav>
       <br>
        <h1 class="centre">Parcours de randonnée</h1>
+       </div>
     </header>
     
     <main>
@@ -49,8 +50,6 @@
             <p><button type="submit">AJOUTER</button></p>
           </form>
       </section>
-    </main>
-
-  </div>  
+    </main>  
 </body>
 </html>
