@@ -21,12 +21,14 @@
         </ul>
       </nav>
       <br>
-      <div>
-       <h1>Parcours de randonnée</h1>
-      </div>
+      
       </div>
     </header>
+
     <main>
+    <div>
+       <h1>Parcours de randonnée</h1>
+      </div>
     <h2>
 <?php
 try {
@@ -66,7 +68,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
             }
         }
     
-?> </h2>
+?> 
+</h2>
     </main>  
 </body>
 </html>
