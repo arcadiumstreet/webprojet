@@ -3,54 +3,67 @@
     margin: 0;
     box-sizing: border-box;
     font-family: century;
-    background-color: coral;
 }
 
 
-.logo a{
-    color: #fff;
-    padding: 0px 20px;
-    border: 1px solid #fff;
+body {
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(./../photos/etoiles.jpeg);
+    background-attachment: fixed ;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+main {
     position: absolute;
-    top: 10px;
-    left :10px;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-weight: 900;
-    text-shadow: rgba(0, 0, 0, 0.7);
+    top: 65%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    height: 350px;;           /* attention !!!!  ici si il est trop grand on pourra scroller sur la page alors que l'on en a pas besoin */
+  }
+
+  
+  .centre{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+input[type="submit"]::-webkit-file-upload-button {
+    visibility: hidden;
   }
   
-  .logo .R {
-    color: rgb(199, 48, 10);
+  input[type="submit"] {
+    background-color: #0e1bd8;
+    color: #FFFFFF;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
     font-weight: bold;
     font-size: 2rem;
-  }
-  
-  .logo .F {
-    color: rgb(16, 5, 223);
-    font-weight: bold;
-    font-size: 2rem;
-  }
-  
-  .principale{
+}
+
+.principale{
     max-width: 114rem;
     margin: 0 auto;
-  }
-  
-  .btn:hover{
+}
+
+.btn:hover{
     background-color: #fff;
     color: black;
-  }
-  
-  nav ul{
+}
+
+nav ul{
     list-style: none;
     float: right;
     display: flex;
     margin-top: 20px;
-  }
+}
 
-  
-  nav ul li a{
+
+nav ul li a{
     text-decoration: none;
     color: #fff;
     padding: 10px 20px;
@@ -59,30 +72,14 @@
     margin: 10px;
     font-weight: 500;
     transition: 0.6s ease;
-  }
-  
-  .centre{
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
-  nav ul li a:hover{
+nav ul li a:hover{
     background-color: #fff;
     color: black;
-  }
-  
-  nav ul li.active a{
+}
+
+nav ul li.active a{
     background-color: #fff;
     color: black;
-  }
-  
-  main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: 60%;
-    left: 50%;
-    height: 100vh;
-  }
+}

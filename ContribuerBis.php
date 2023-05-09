@@ -2,12 +2,13 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8"/>
+  <link rel="stylesheet" href="styles/header.css"/>
   <link rel="stylesheet" href="styles/contribuer.css"/>
   <title>Page d'accueil</title>
 </head>
-<body>
-<div class="principale">
+<body class="white-text">
     <header>
+    <div class="principale">
       <div class="logo">
         <a href="index.php"><span class="R">R</span><span>d</span><span class="F">F</span></a>
       </div>
@@ -21,7 +22,8 @@
       </nav>
       <br>
       <div>
-       <h1 >Parcours de randonnée</h1>
+       <h1>Parcours de randonnée</h1>
+      </div>
       </div>
     </header>
     <main>
@@ -65,9 +67,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         }
     
 ?> </h2>
-    </main>
-    
-  </div>  
+    </main>  
 </body>
 </html>
 

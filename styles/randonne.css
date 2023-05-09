@@ -3,70 +3,27 @@
   margin: 0;
   box-sizing: border-box;
   font-family: century;
-  background-color: rgb(227, 224, 0);
 }
 
+body {
+  background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(./../photos/balisage.jpg);
+  background-attachment: fixed ;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
 
-.logo a{
-  color: #fff;
-  padding: 0px 20px;
-  border: 1px solid #fff;
+.centre{
   position: absolute;
-  top: 10px;
-  left :10px;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-weight: 900;
-  text-shadow: rgba(0, 0, 0, 0.7);
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.logo .R {
-  color: rgb(199, 48, 10);
-  font-weight: bold;
-  font-size: 2rem;
-}
-
-.logo .F {
-  color: rgb(16, 5, 223);
-  font-weight: bold;
-  font-size: 2rem;
-}
-
-.principale{
-  max-width: 114rem;
-  margin: 0 auto;
-}
-
-.btn:hover{
-  background-color: #fff;
-  color: black;
-}
-
-nav ul{
-  list-style: none;
-  float: right;
-  display: flex;
-  margin-top: 20px;
-}
-
-
-nav ul li a{
-  text-decoration: none;
-  color: #fff;
-  padding: 10px 20px;
-  text-transform: uppercase;
-  border: 1px solid white;
-  margin: 10px;
-  font-weight: 500;
-  transition: 0.6s ease;
-}
-
-nav ul li a:hover{
-  background-color: #fff;
-  color: black;
-}
-
-nav ul li.active a{
-  background-color: #fff;
-  color: black;
+main {
+  position: absolute;
+  top: 65%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  height: 350px;;           /* attention !!!!  ici si il est trop grand on pourra scroller sur la page alors que l'on en a pas besoin */
 }

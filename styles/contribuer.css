@@ -3,84 +3,59 @@
     margin: 0;
     box-sizing: border-box;
     font-family: century;
-    background-color: rgb(73, 204, 2);
   }
   
+  body {
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(./../photos/automne.jpg);
+    background-attachment: fixed ;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
   
-  .logo a{
-    color: #fff;
-    padding: 0px 20px;
-    border: 1px solid #fff;
-    position: absolute;
-    top: 10px;
-    left :10px;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-weight: 900;
-    text-shadow: rgba(0, 0, 0, 0.7);
-  }
-  
-  .logo .R {
-    color: rgb(199, 48, 10);
-    font-weight: bold;
-    font-size: 2rem;
-  }
-  
-  .logo .F {
-    color: rgb(16, 5, 223);
-    font-weight: bold;
-    font-size: 2rem;
-  }
-  
-  .principale{
-    max-width: 114rem;
-    margin: 0 auto;
-  }
-  
-  .btn:hover{
-    background-color: #fff;
-    color: black;
-  }
-  
-  nav ul{
-    list-style: none;
-    float: right;
-    display: flex;
-    margin-top: 20px;
-  }
-
-  
-  nav ul li a{
-    text-decoration: none;
-    color: #fff;
-    padding: 10px 20px;
-    text-transform: uppercase;
-    border: 1px solid white;
-    margin: 10px;
-    font-weight: 500;
-    transition: 0.6s ease;
-  }
   
   .centre{
     position: absolute;
-    top: 20%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
-  nav ul li a:hover{
-    background-color: #fff;
-    color: black;
-  }
-  
-  nav ul li.active a{
-    background-color: #fff;
-    color: black;
-  }
   
   main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    position: absolute;
+    top: 65%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    height: 350px;;           /* attention !!!!  ici si il est trop grand on pourra scroller sur la page alors que l'on en a pas besoin */
   }
+
+
+  /* ici on a ce qu'il faut pour modifier le bouton de téléchargement*/
+  input[type="file"]::-webkit-file-upload-button {
+    visibility: hidden;
+  }
+  
+  input[type="file"]::before {
+    content: 'Choisir un fichier';
+    color: #5830c6;
+    background-color: #FFA500;
+    border: none;
+    padding: 5px 10px;
+    outline: none;
+    display: inline-block;
+    white-space: nowrap;
+    /*-webkit-user-select: none;        Pour éviter la sélection de texte mais provoque une erreur*/
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 5px;
+  }
+  
+  input[type="file"]:hover::before {
+    background-color: #FF8C00;
+  }
+  
+  input[type="file"]:active::before {
+    background-color: #FFA07A;
+  }
+  
