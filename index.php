@@ -29,7 +29,38 @@
     </div>
   </header>
 </br>
+
+
+
 <section class="defile">
+
+<?php
+try {
+  $dbh = new PDO("mysql:host=localhost;dbname=projetweb", "root", "");
+  $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch(PDOException $e) {
+    echo "Erreur de connexion à la base de données: " . $e->getMessage();
+}
+    $stmt = $dbh->prepare("SELECT * FROM randonne");
+    $stmt->execute();
+    $result = $stmt->fetchAll();
+    $dbh = null;
+echo "<table style='border-collapse: separate '>";
+echo "<tr style='color: blue'> 
+        <th>Nom </th>
+        <th>adresse_depart</th>
+    </tr>";
+foreach ($result as $row) {
+    echo "<tr>";
+    echo "<td>" . $row['Nom'] . "</td>";
+    echo "<td>" . $row['adresse_depart'] . "</td>";
+    echo "</tr>";
+}
+echo "</table>";
+
+?>
+
+
 <p>dhegfzvdgedhegfzvdgedhegfzvdgedhegfzvdgedhegfzvdgedhegfzvdgedhegfzvdgedhegfzvdgedhegfzvdgedhegfzvdgedhegfzvdgedhegfzvdgedhegfzvdgedhegfzvdgedhegfzvdgedhegfzvdgedhegfzvdgedhegfzvdge</p>
 <p>dhegfzvdgedhegfzvdgedhegfzvdgedhegfzvdgedhegfzvdgedhegfzvdge</p>
 <p>dhegfzvdge</p>

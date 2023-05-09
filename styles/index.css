@@ -113,25 +113,3 @@ nav ul{
     display: flex;
     margin-top: 20px;
 }
-
-
-nav ul li a{
-    text-decoration: none;
-    color: #fff;
-    padding: 10px 20px;
-    text-transform: uppercase;
-    border: 1px solid white;
-    margin: 10px;
-    font-weight: 500;
-    transition: 0.6s ease;
-}
-
-nav ul li a:hover{
-    background-color: #fff;
-    color: black;
-}
-
-nav ul li.active a{
-    background-color: #fff;
-    color: black;
-}

@@ -24,7 +24,7 @@
     
     <section>
       <p>Randonne</p>
-      <p>je pense qu'on peut essayer de faire dans un tableau pour avoir l'image qui se palce bien</p>
+      <p>je pense qu'on peut essayer de faire dans un tableau pour avoir l'image qui se place bien</p>
     <table>
     <tr>
      <td>je suis la description </td>

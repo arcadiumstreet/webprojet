@@ -19,18 +19,20 @@
         <li class="active"><a href="Connexion.php">Connexion</a></li>
       </ul>
     </nav>
-    <div><h1>Parcours de randonnée</h1></div>
+    <h1 class="centre">Parcours de randonnée</h1>
     </header>
-     
-    <section>
-      <h2>Connexion : </h2>
+    <main>
+      
+      <section>
+      <h2>Connexion :</h2>
           <form action="Connexion.php" method="post">
             Identifiant : <input type="text" size="16" name="iden" />
             <input type="submit" value="Se connecter" />
             </br>
             Premiere connexion : <input type="checkbox" id = "premiere">
           </form>
-    </section>
+      </section>
+    </main>
   </div>
 </body>
 </html>
