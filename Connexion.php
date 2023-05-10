@@ -28,11 +28,11 @@
     <main>
       <section>
         <h2>Connexion : </h2>
-            <form action="Connexion.php" method="post">
-              Identifiant : <input type="text" size="16" name="iden" />
+            <form action="ConnexionBis.php" method="post">
+              Identifiant : <input type="text" size="16" name="id" />
               <input type="submit" value="Se connecter" />
               </br>
-              Premiere connexion : <input type="checkbox" id = "premiere">
+              Premiere connexion : <input type="checkbox" name = "premiere" id = "premiere">
             </form>
       </section>
     </main>

@@ -44,30 +44,58 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $adresse_depart = $_POST['adresse_depart'];
     $image = $_FILES['image']['name'];
 
-  
-
     if(empty($nom) || empty($description) || empty($adresse_depart) || empty($image)) {
-        echo "Veuillez remplir tous les champs obligatoires.";
-       
+        echo "Veuillez remplir tous les champs obligatoires.";  
     } else {
+
+      //controle image
+      $target_file = "imagerando/" . basename($_FILES['image']['name']);
+      $uploadOk = 1;
+      $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
+
+      if (file_exists($target_file)) {
+        echo "Le fichier image existe déjà.";
+        $uploadOk = 0;
+    }
+
+    // Autoriser certains formats de fichiers
+    if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg" && $imageFileType != "gif" ) {
+      echo "Seuls les fichiers JPG, JPEG, PNG et GIF sont autorisés.";
+      $uploadOk = 0;
+  }
+  //controle si le nom de la rando est present
+  $query = $pdo->prepare("SELECT COUNT(*) FROM randonne WHERE nom = :nom");
+  $query->execute(array(':nom' => $nom));
+  $count = $query->fetchColumn();
+  
+  if ($count > 0) {
+      // Le nom de randonnée est déjà présent dans la base de données
+      echo "Le nom de randonnée est déjà utilisé.";
+      $uploadOk = 0;
+  }
+    // Vérification si $uploadOk est égal à 0
+    if ($uploadOk == 0) {
+      echo "<br>Le fichier n'a pas été téléchargé.";
+      echo "<br><nav><ul><li><a href='Contribuer.php'>reéssayer</a></li></ul></nav>" ;//refaire il est horrible 
+
+  // Si tout est correct, télécharger le fichier
+    }else{
         // Upload de l'image
         $target_dir = "imagerando/";
         $target_file = $target_dir . basename($_FILES['image']['name']);
         $uploadOk = 1;
         $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
-      }
-            if (move_uploaded_file($_FILES["image"]["tmp_name"], $target_file)) {
+      
+
               $stmt = $pdo->prepare("INSERT INTO randonne (nom, description, adresse_depart) VALUES (:nom, :description, :adresse_depart)");
               $stmt->bindParam(':nom', $nom);
               $stmt->bindParam(':description', $description);
               $stmt->bindParam(':adresse_depart', $adresse_depart);
               $stmt->execute();
               echo "La randonnée a été ajoutée avec succès !";
-            } else {
-                echo "Il y a eu une erreur lors du téléchargement du fichier.";
-            }
-        }
-    
+          }
+  }
+}
 ?> 
 </h2>
     </main>  

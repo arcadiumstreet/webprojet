@@ -24,7 +24,7 @@
        <h1 class="centre">Parcours de randonnée</h1>
        </div>
     </header>
-    
+  
     <main>
       
       <section>
