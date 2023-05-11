@@ -80,7 +80,7 @@ mysqli_close($dbh);
 
       <table>
       <tr>
-      <td>je suis la description </td>
+
       <td rowspan="2" style="border : 1px solid #333 "></td>
       </tr>
       <tr>
