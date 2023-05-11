@@ -81,9 +81,6 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 
       //redimensionne l'image de
 
-
-
-      
   // Si tout est correct, télécharger le fichier
     }else{
         // Upload de l'image
@@ -91,7 +88,6 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         $target_file = $target_dir . basename($_FILES['image']['name']);
         $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
 
-      
               $stmt = $pdo->prepare("INSERT INTO randonne (nom, description, adresse_depart) VALUES (:nom, :description, :adresse_depart)");
               $stmt->bindParam(':nom', $nom);
               $stmt->bindParam(':description', $description);

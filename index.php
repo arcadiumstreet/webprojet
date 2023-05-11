@@ -32,9 +32,7 @@
 </br>
 
 <main >
-
 <section class="defile">
-
 <?php
 try {
   $dbh = new PDO("mysql:host=localhost;dbname=projetweb", "root", "");
@@ -61,32 +59,6 @@ echo "</table>";
 
 ?>
 
-
-<p>dhegfzvdgedhegfzvdgedhegfzvdgedhegfzvdgedhegfzvdgedhegfzvdgedhegfzvdgedhegfzvdgedhegfzvdgedhegfzvdgedhegfzvdgedhegfzvdgedhegfzvdgedhegfzvdgedhegfzvdgedhegfzvdgedhegfzvdgedhegfzvdge</p>
-<p>dhegfzvdgedhegfzvdgedhegfzvdgedhegfzvdgedhegfzvdgedhegfzvdge</p>
-<p>dhegfzvdge</p>
-<p>dhegfzvdgedhegfzvdgedhegfzvdgedhegfzvdgedhegfzvdgedhegfzvdge</p>
-<p>dhegfzvdge</p>
-<p>dhegfzvdgedhegfzvdgedhegfzvdgedhegfzvdgedhegfzvdgedhegfzvdge</p>
-<p>dhegfzvdge</p>
-
-      <p>dhegfzvdge</p>
-      <p>dhegfzvdge</p>
-      <p>dhegfzvdge</p>
-      <p>dhegfzvdge</p>
-      <p>dhegfzvdge</p>
-
-      <p>dhegfzvdge</p>
-      <p>dhegfzvdge</p>
-      <p>dhegfzvdge</p>
-
-      <p>dhegfzvdge</p>
-      <p>dhegfzvdge</p>
-      <p>dhegfzvdge</p>
-
-      <p>dhegfzvdge</p>
-      <p>dhegfzvdge</p>
-      <p>dhegfzvdge</p>
 
     </section>
   </main>
