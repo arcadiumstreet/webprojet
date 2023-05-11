@@ -31,19 +31,12 @@
 </br>
 
 <main >
-<<<<<<< HEAD
 
 <form class="selectTri" method="get">
-  <label for="tri">Trier par :</label>
-  <select id="tri" name="tri">
-    <option value="nom">Nom</option>
-    <option value="score">Score</option>
-  </select>
-  <button type="submit">Trier</button>
+  <button class="tributton" type="submit" name="tri_nom">Trier par nom</button>
+  <button class="tributton" type="submit" name="tri_score">Trier par score</button>
 </form>
 
-=======
->>>>>>> ff56512c0d15b253eb9ceeb4ee83dbcee28c4334
 <section class="defile">
 <?php
   try {
@@ -56,18 +49,19 @@
 
 
 
-  // Vérifier si le bouton de tri a été cliqué
-  if (isset($_GET['tri'])) {
-    // Si le bouton de tri a été cliqué, trier les randonnées en fonction de l'option choisie
-    if ($_GET['tri'] == 'nom') {
-      $stmt = $dbh->prepare("SELECT * FROM randonne ORDER BY Nom");
-    } else {
-      $stmt = $dbh->prepare("SELECT * FROM randonne ORDER BY Score DESC");
-    }
-  } else {
-    // Si le bouton de tri n'a pas été cliqué, afficher toutes les randonnées triées par nom par défaut
+ // Vérifier si un des boutons de tri a été cliqué
+ if (isset($_GET['tri_nom']) || isset($_GET['tri_score'])) {
+  // Déterminer quel bouton de tri a été cliqué et trier les randonnées en conséquence
+  if (isset($_GET['tri_nom'])) {
     $stmt = $dbh->prepare("SELECT * FROM randonne ORDER BY Nom");
+  } else {
+    $stmt = $dbh->prepare("SELECT * FROM randonne ORDER BY Score DESC");
   }
+} else {
+  // Si aucun bouton de tri n'a été cliqué, afficher toutes les randonnées triées par nom par défaut
+  $stmt = $dbh->prepare("SELECT * FROM randonne ORDER BY Nom");
+}
+
 
   $stmt->execute();
   $result = $stmt->fetchAll();
