@@ -4,6 +4,7 @@
   <meta charset="utf-8"/>
   <link rel="stylesheet" href="styles/header.css"/>
   <link rel="stylesheet" href="styles/randonne.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   <title>Liste des randos</title>
 </head>
 <body class="white-text">
@@ -59,11 +60,25 @@
             $image = $images[0];
             echo "<img src='{$image}' alt='Image de la randonnée'>" . "<br>";
           } else {
-            echo "Aucune image trouvée pour cette randonnée";
+            echo "Aucune image trouvée pour cette randonnée" . "<br>";
           }
 
           
-          echo "score de popularité : " . $row["Score"];
+          //echo "score de popularité : " . $row["Score"];
+          $score = $row["Score"];
+          echo "Score de popularité : ";
+          for ($i = 1; $i <= 5; $i++) {
+            if ($i <= floor($score)) {
+              // Afficher une étoile pleine
+              echo '<span class="fas fa-star"></span>';
+            } else if ($i - $score <= 0.5) {
+              // Afficher une étoile à moitié remplie
+              echo '<span class="fas fa-star-half-alt"></span>';
+            } else {
+              // Afficher une étoile vide
+              echo '<span class="far fa-star"></span>';
+            }
+          }
           echo "<br>";
         } else {
           // Aucun ou plusieurs résultats ont été trouvés
@@ -89,6 +104,7 @@ mysqli_close($dbh);
       </table>
 
       </section>
+
     </main>    
 </body>
 </html>
