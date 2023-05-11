@@ -31,6 +31,7 @@
 </br>
 
 <main >
+<<<<<<< HEAD
 
 <form class="selectTri" method="get">
   <label for="tri">Trier par :</label>
@@ -41,8 +42,9 @@
   <button type="submit">Trier</button>
 </form>
 
+=======
+>>>>>>> ff56512c0d15b253eb9ceeb4ee83dbcee28c4334
 <section class="defile">
-
 <?php
   try {
     $dbh = new PDO("mysql:host=localhost;dbname=projetweb", "root", "");

@@ -82,9 +82,6 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 
       //redimensionne l'image de
 
-
-
-      
   // Si tout est correct, télécharger le fichier
     }else{
         // Upload de l'image
@@ -107,7 +104,6 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
           echo "Une erreur s'est produite lors du téléchargement du fichier.";
         }
 
-      
               $stmt = $pdo->prepare("INSERT INTO randonne (nom, description, adresse_depart) VALUES (:nom, :description, :adresse_depart)");
               $stmt->bindParam(':nom', $nom);
               $stmt->bindParam(':description', $description);
