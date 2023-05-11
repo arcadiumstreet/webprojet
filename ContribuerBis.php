@@ -43,6 +43,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $adresse_depart = $_POST['adresse_depart'];
     $image = $_FILES['image']['name'];
 
+    $extension = pathinfo($image, PATHINFO_EXTENSION);
+
     if(empty($nom) || empty($description) || empty($adresse_depart) || empty($image)) {
         echo "Veuillez remplir tous les champs obligatoires.";  
         echo "<br><nav><ul><li><a href='Contribuer.php'>reéssayer</a></li></ul></nav>";
@@ -86,9 +88,24 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
   // Si tout est correct, télécharger le fichier
     }else{
         // Upload de l'image
+        /*
         $target_dir = "imagerando/";
-        $target_file = $target_dir . basename($_FILES['image']['name']);
+        //$target_file = $target_dir . basename($_FILES['image']['name']);
+        $target_file = $target_dir . $nom . '.' . $extension;
         $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
+        */
+        $image = $_FILES['image']['name'];
+        $nom_rando = $_POST['nom'];
+        $extension = pathinfo($image, PATHINFO_EXTENSION);
+
+        $target_dir = "imagerando/";
+        $target_file = $target_dir . $nom_rando . '.' . $extension;
+
+        if (move_uploaded_file($_FILES['image']['tmp_name'], $target_file)) {
+          echo "Le fichier a été téléchargé avec succès.";
+        } else {
+          echo "Une erreur s'est produite lors du téléchargement du fichier.";
+        }
 
       
               $stmt = $pdo->prepare("INSERT INTO randonne (nom, description, adresse_depart) VALUES (:nom, :description, :adresse_depart)");
