@@ -26,17 +26,7 @@
     <main>
       <section>
       <?php
-      try {
-        $dbh = new PDO("mysql:host=localhost;dbname=projetweb", "root", "");
-        $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-      } catch(PDOException $e) {
-          echo "Erreur de connexion à la base de données: " . $e->getMessage();
-      }
-      $rando_nom = $_GET['nom_rando'];
-      echo $rando_nom;
-
-
-
+    
       // Récupérer le nom de la randonnée à partir d'un paramètre GET
       $nom_rando = $_GET['nom_rando'];
 
