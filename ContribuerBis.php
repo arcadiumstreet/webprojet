@@ -122,6 +122,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         $tmp_file = $target_dir . 'rando_' . uniqid() . '.' . $extension;
          imagejpeg($imageredim, $tmp_file);
          if (rename($tmp_file, $target_file)) {
+          
           echo "</br>Le fichier a été téléchargé avec succès.";
           $stmt = $pdo->prepare("INSERT INTO randonne (nom, description, adresse_depart) VALUES (:nom, :description, :adresse_depart)");
               $stmt->bindParam(':nom', $nom);
