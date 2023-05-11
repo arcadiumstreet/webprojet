@@ -35,28 +35,41 @@
        echo "Erreur de connexion à la base de données: " . $e->getMessage();
     }
 
-    if(!isset($_POST['premiere']) && $_POST['premiere'] != 'on'){
-    //si il est deja inscrit
-    $stmt = $pdo->prepare("SELECT * FROM id");
-    $stmt->execute();
-    $result = $stmt->fetchAll();
-    $id = $_POST['id'];
-    $query = $pdo->prepare("SELECT COUNT(*) FROM id WHERE identifiant = :identifiant");
-  $query->execute(array(':identifiant' => $id));
-  $count = $query->fetchColumn();
-  
-  if ($count ==1 ) {
-      // Le nom de randonnée est déjà présent dans la base de données
-      echo "Bienvenue " . $id . " ,ca fait plaisir de vous revoir.";
-  }else {
-    echo "Vous vous etes jamais connecter veillez créer un compte en cochant la case premiere connexion.";
-  }
+    if (isset($_POST['premiere']) && $_POST['premiere'] == 'on') {
+      //Si le nom est deja présent dans la base de données
+
+      $stmt = $pdo->prepare("SELECT * FROM id");
+       $stmt->execute();
+       $result = $stmt->fetchAll();
+       $id = $_POST['id'];
+       $query = $pdo->prepare("SELECT COUNT(*) FROM id WHERE identifiant = :identifiant");
+     $query->execute(array(':identifiant' => $id));
+     $count = $query->fetchColumn();
+     if ($count > 0) {
+         // Le nom de randonnée est déjà présent dans la base de données
+         echo "Votre identifiant est déja utilisée <br><nav><ul><li><a href='Connexion.php'>reéssayer</a></li></ul></nav>";
+     }else {
+      $id = $_POST['id'];
+      $stmt = $pdo->prepare("INSERT INTO id (identifiant) VALUES (:identifiant)");
+      $stmt->bindParam(':identifiant', $id);
+      $stmt->execute();
+      echo "Bienvenue " . $id . ", vous etes connecté bienvenue sur votre site ";
+    }
 }else {
-    $id = $_POST['id'];
-    $stmt = $pdo->prepare("INSERT INTO id (identifiant) VALUES (:identifiant)");
-    $stmt->bindParam(':identifiant', $id);
-    $stmt->execute();
-    echo "Bienvenu " . $id . ", vous etes connecté bienvenue sur votre site ";
+       //si il est deja inscrit
+       $stmt = $pdo->prepare("SELECT * FROM id");
+       $stmt->execute();
+       $result = $stmt->fetchAll();
+       $id = $_POST['id'];
+       $query = $pdo->prepare("SELECT COUNT(*) FROM id WHERE identifiant = :identifiant");
+     $query->execute(array(':identifiant' => $id));
+     $count = $query->fetchColumn();
+     if ($count ==1 ) {
+         // Le nom de randonnée est déjà présent dans la base de données
+         echo "Bienvenue " . $id . " ,ca fait plaisir de vous revoir.";
+     }else {
+       echo "Vous vous etes jamais connecter veillez créer un compte en cochant la case premiere connexion.";
+     }
 }
         ?>
         </h2>

@@ -46,6 +46,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     if(empty($nom) || empty($description) || empty($adresse_depart) || empty($image)) {
         echo "Veuillez remplir tous les champs obligatoires.";  
+        echo "<br><nav><ul><li><a href='Contribuer.php'>reéssayer</a></li></ul></nav>";
     } else {
 
       //controle image
@@ -76,17 +77,21 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     // Vérification si $uploadOk est égal à 0
     if ($uploadOk == 0) {
       echo "<br>Le fichier n'a pas été téléchargé.";
-      echo "<br><nav><ul><li><a href='Contribuer.php'>reéssayer</a></li></ul></nav>" ;//refaire il est horrible 
+      echo "<br><nav><ul><li><a href='Contribuer.php'>reéssayer</a></li></ul></nav>" ;
 
+      //redimensionne l'image de
+
+
+
+      
   // Si tout est correct, télécharger le fichier
     }else{
         // Upload de l'image
         $target_dir = "imagerando/";
         $target_file = $target_dir . basename($_FILES['image']['name']);
-        $uploadOk = 1;
         $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
-      
 
+      
               $stmt = $pdo->prepare("INSERT INTO randonne (nom, description, adresse_depart) VALUES (:nom, :description, :adresse_depart)");
               $stmt->bindParam(':nom', $nom);
               $stmt->bindParam(':description', $description);
