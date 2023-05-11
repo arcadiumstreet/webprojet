@@ -15,7 +15,6 @@
       <nav>
         <ul>
           <li><a href="index.php">Accueil</a></li>
-          <li><a href="Randonne.php">Randonnée</a></li>
           <li class="active"><a href="Contribuer.php">contribuer</a></li>
           <li><a href="Connexion.php">Connexion</a></li>
         </ul>
