@@ -31,6 +31,12 @@
 </br>
 
 <main >
+
+<form class="selectTri" method="get">
+  <button class="tributton" type="submit" name="tri_nom">Trier par nom</button>
+  <button class="tributton" type="submit" name="tri_score">Trier par score</button>
+</form>
+
 <section class="defile">
 <?php
   try {
@@ -39,44 +45,65 @@
   } catch(PDOException $e) {
       echo "Erreur de connexion à la base de données: " . $e->getMessage();
   }
-      $stmt = $dbh->prepare("SELECT * FROM randonne");
-      $stmt->execute();
-      $result = $stmt->fetchAll();
-      $dbh = null;
+
+
+
+
+ // Vérifier si un des boutons de tri a été cliqué
+ if (isset($_GET['tri_nom']) || isset($_GET['tri_score'])) {
+  // Déterminer quel bouton de tri a été cliqué et trier les randonnées en conséquence
+  if (isset($_GET['tri_nom'])) {
+    $stmt = $dbh->prepare("SELECT * FROM randonne ORDER BY Nom");
+  } else {
+    $stmt = $dbh->prepare("SELECT * FROM randonne ORDER BY Score DESC");
+  }
+} else {
+  // Si aucun bouton de tri n'a été cliqué, afficher toutes les randonnées triées par nom par défaut
+  $stmt = $dbh->prepare("SELECT * FROM randonne ORDER BY Nom");
+}
+
+
+  $stmt->execute();
+  $result = $stmt->fetchAll();
+  $dbh = null;
+
   echo "<table style='border-collapse: separate '>";
   echo "<tr style='color: blue'> 
           <th> Nom </th>
           <th> adresse_depart </th>
+          <th> Score </th>
       </tr>";
   foreach ($result as $row) {
       echo "<tr>";
       echo '<td><a href="Randonne.php?nom_rando=' . $row['Nom'] . '">' . $row['Nom'] . '</a></td>';
       echo "<td>" . $row['adresse_depart'] . "</td>";
+      echo "<td>" . $row['Score'] . "</td>";
       echo "</tr>";
   }
   echo "</table>";
 
 ?>
 
-      <p>dhegfzvdge</p>
-      <p>dhegfzvdge</p>
-      <p>dhegfzvdge</p>
-      <p>dhegfzvdge</p>
-      <p>dhegfzvdge</p>
+<p>dhegfzvdge</p>
+<p>dhegfzvdge</p>
+<p>dhegfzvdge</p>
+<p>dhegfzvdge</p>
+<p>dhegfzvdge</p>
 
-      <p>dhegfzvdge</p>
-      <p>dhegfzvdge</p>
-      <p>dhegfzvdge</p>
+<p>dhegfzvdge</p>
+<p>dhegfzvdge</p>
+<p>dhegfzvdge</p>
 
-      <p>dhegfzvdge</p>
-      <p>dhegfzvdge</p>
-      <p>dhegfzvdge</p>
+<p>dhegfzvdge</p>
+<p>dhegfzvdge</p>
+<p>dhegfzvdge</p>
 
-      <p>dhegfzvdge</p>
-      <p>dhegfzvdge</p>
-      <p>dhegfzvdge</p>
+<p>dhegfzvdge</p>
+<p>dhegfzvdge</p>
+<p>dhegfzvdge</p>
 
-    </section>
+</section>
+
   </main>
 </body>
 </html>

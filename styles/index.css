@@ -73,7 +73,36 @@ body {
     padding: 10px 20px;
 }
 
-.bouton-telecharger{
-    transition: 0.6s ease;
+.bouton-telecharger:hover{
+    background-color: #fff;
+    color: black;
 }
 
+.selectTri {
+    padding: 10px;
+    color: #fff;
+    position: absolute;
+    top: 32%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+  
+
+.tributton:hover{
+    background-color: #04b8cc;
+    cursor: pointer;
+}
+
+.tributton:active{
+    background-color: #08ef2f;
+  }
+
+.tributton{
+    background-color: #0e1bd8;
+    color: #FFFFFF;
+    padding: 5px;
+    border-radius: 2px;
+    border: none;
+    font-size: 13px;
+    font-weight: bold;
+}
