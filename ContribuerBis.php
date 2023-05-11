@@ -16,7 +16,16 @@
         <ul>
           <li><a href="index.php">Accueil</a></li>
           <li class="active"><a href="Contribuer.php">contribuer</a></li>
-          <li><a href="Connexion.php">Connexion</a></li>
+          <?php
+          session_start();
+          if(isset($_SESSION['user_id'])){
+            $user_id = $_SESSION['user_id'];
+            echo '<li><a href="#">'.$user_id.'</a></li>';
+          } else {
+            echo '<li><a href="Connexion.php">Connexion</a></li>';
+          }
+        ?>
+          <!-- <li><a href="Connexion.php">Connexion</a></li> -->
         </ul>
       </nav>
       <br>

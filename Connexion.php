@@ -8,6 +8,9 @@
 </head>
 
 <body class="white-text">
+  
+
+
   <header>
     <div class="principale">
       <div class="logo">
@@ -17,7 +20,16 @@
       <ul>
         <li><a href="Index.php">Accueil</a></li>
         <li><a href="Contribuer.php">Contribuer</a></li>
-        <li class="active"><a href="Connexion.php">Connexion</a></li>
+        <?php
+          session_start();
+          if(isset($_SESSION['user_id'])){
+            $user_id = $_SESSION['user_id'];
+            echo '<li><a href="#">'.$user_id.'</a></li>';
+          } else {
+            echo '<li><a href="Connexion.php">Connexion</a></li>';
+          }
+        ?>
+        <!--<li class="active"><a href="Connexion.php">Connexion</a></li> -->
       </ul>
     </nav>
   </div>

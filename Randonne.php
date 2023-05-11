@@ -17,7 +17,16 @@
         <ul>
           <li><a href="index.php">Accueil</a></li>
           <li><a href="Contribuer.php">contribuer</a></li>
-          <li><a href="Connexion.php">Connexion</a></li>
+          <?php
+          session_start();
+          if(isset($_SESSION['user_id'])){
+            $user_id = $_SESSION['user_id'];
+            echo '<li><a href="#">'.$user_id.'</a></li>';
+          } else {
+            echo '<li><a href="Connexion.php">Connexion</a></li>';
+          }
+        ?>
+          <!-- <li><a href="Connexion.php">Connexion</a></li> -->
         </ul>
       </nav>
     <h1 class="centre">Randonnée : " <?php echo $_GET['nom_rando'] ?> "</h1>
@@ -98,8 +107,17 @@ mysqli_close($dbh);
 
       <td rowspan="2" style="border : 1px solid #333 "></td>
       </tr>
-      <tr>
-      <td ></td>
+      <form method="post" action="noter_rando.php">
+    <label for="note">Note : </label>
+    <select name="note" id="note">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+    </select>
+    <input type="submit" value="Noter">
+    </form>
 
       </table>
 
