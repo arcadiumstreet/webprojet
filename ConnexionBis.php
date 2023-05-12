@@ -58,7 +58,7 @@
 
         $_SESSION['user_id']=$id; // ici enregistre l'identifiant de l'utilisateur dans la variable de session
 
-        echo "Bienvenue " . $id . ", vous etes connecté bienvenue sur votre site ";
+        echo "Bienvenue " . $id . ", vous êtes connecté bienvenue sur votre site ";
         }
       }else {
        //si il est deja inscrit
@@ -72,9 +72,9 @@
       if ($count ==1 ) {
           // Le nom de l'utilisateur est déjà présent dans la base de données
           $_SESSION['user_id'] = $id;  // pareil que plus haut : on enregistre l'identifiant de l'utilisateur dans la variable session
-          echo "Bienvenue " . $id . " ,ca fait plaisir de vous revoir.";
+          echo "Bienvenue " . $id . ", ça fait plaisir de vous revoir.";
       }else {
-        echo "Vous vous etes jamais connecter veillez créer un compte en cochant la case premiere connexion.";
+        echo "Vous vous êtes jamais connecté. <br/> Créer un compte en cochant la case 'première connexion' .<br><nav><ul><li><a href='Connexion.php'>reéssayer</a></li></ul></nav>";
       }
 }
         ?>

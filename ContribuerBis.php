@@ -70,8 +70,8 @@
           }
 
           // Autoriser certains formats de fichiers
-          if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg" && $imageFileType != "gif" ) {
-            echo "Seuls les fichiers JPG, JPEG, PNG et GIF sont autorisés.";
+          if($imageFileType != "jpg" && $imageFileType != "jpeg") {
+            echo "Seuls les fichiers JPG, JPEG sont autorisés.";
             $uploadOk = 0;
           }
           //controle si le nom de la rando est present

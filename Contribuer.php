@@ -44,7 +44,7 @@ if (!isset($_SESSION['user_id'])) {
       
       <section>
         
-        <h2>Ajouter une randonnée</h2>
+        <h2>Ajouter une randonnée : </h2>
           
         <form action="ContribuerBis.php" method="post" enctype="multipart/form-data">
             <p>
