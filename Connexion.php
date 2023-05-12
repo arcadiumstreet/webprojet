@@ -27,14 +27,14 @@
             echo '<li class="active"><a href="Connexion.php">Connexion</a></li>';
           }
         ?>
-        <!--<li class="active"><a href="Connexion.php">Connexion</a></li> -->
       </ul>
     </nav>
   </div>
     <h1 class="centre">Connectez vous pour ajouter des randonnées</h1>
     </div>
   </header>
-    <main>
+
+  <main>
       <section>
         <h2>Connexion : </h2>
             <form action="ConnexionBis.php" method="post">
@@ -44,6 +44,7 @@
               Premiere connexion : <input type="checkbox" name = "premiere" id = "premiere">
             </form>
       </section>
-    </main>
+  </main>
+  
 </body>
 </html>

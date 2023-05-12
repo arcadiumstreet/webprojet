@@ -16,7 +16,7 @@ if (!isset($_SESSION['user_id'])) {
 </head>
 
 <body class="white-text">
-    <header>
+  <header>
     <div class="principale">
       <div class="logo">
         <a href="index.php"><span class="R">R</span><span>d</span><span class="F">F</span></a>
@@ -37,8 +37,8 @@ if (!isset($_SESSION['user_id'])) {
       </nav>
       <br>
       <h1 class="centre">Parcours de randonnée</h1>
-       </div>
-    </header>
+    </div>
+  </header>
   
     <main>
       
