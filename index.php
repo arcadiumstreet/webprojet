@@ -21,10 +21,11 @@
           if(isset($_SESSION['user_id'])){
             $user_id = $_SESSION['user_id'];
             echo '<li><a href="#">'.$user_id.'</a></li>';
+            echo '<form method="post" action="logout.php"><button type="submit">Déconnexion</button></form>';
           } else {
             echo '<li><a href="Connexion.php">Connexion</a></li>';
           }
-          session_destroy();
+         
         ?>
           <!-- <li><a href="Connexion.php">Connexion</a></li> -->
         </ul>
@@ -57,8 +58,6 @@
   }
 
 
-
-
  // Vérifier si un des boutons de tri a été cliqué
  if (isset($_GET['tri_nom']) || isset($_GET['tri_score'])) {
   // Déterminer quel bouton de tri a été cliqué et trier les randonnées en conséquence
@@ -71,7 +70,6 @@
   // Si aucun bouton de tri n'a été cliqué, afficher toutes les randonnées triées par nom par défaut
   $stmt = $dbh->prepare("SELECT * FROM randonne ORDER BY Nom");
 }
-
 
   $stmt->execute();
   $result = $stmt->fetchAll();
