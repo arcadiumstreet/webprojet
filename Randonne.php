@@ -106,7 +106,7 @@
 
       <td rowspan="2" style="border : 1px solid #333 "></td>
       </tr>
-      <form method="post" action="noter_rando.php">
+      <form method="post" action="noter_rando.php?nom_rando=<?php echo $row['Nom']; ?>">
       <label for="note">Note : </label>
       <select name="note" id="note">
           <option value="1">1</option>
@@ -117,6 +117,7 @@
       </select>
       <input type="submit" value="Noter">
       </form>
+      
       </table>
 
     </section>
