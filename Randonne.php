@@ -5,7 +5,7 @@
   <link rel="stylesheet" href="styles/header.css"/>
   <link rel="stylesheet" href="styles/randonne.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-  <title>Liste des randos</title>
+  <title>Randonnée</title>
 </head>
 <body class="white-text">
     <header>

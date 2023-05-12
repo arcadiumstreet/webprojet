@@ -4,7 +4,7 @@
   <meta charset="utf-8"/>
   <link rel="stylesheet" href="styles/header.css"/>
   <link rel="stylesheet" href="styles/contribuer.css"/>
-  <title>Page d'accueil</title>
+  <title>Contribuer</title>
 </head>
 <body class="white-text">
     <header>

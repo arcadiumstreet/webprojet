@@ -12,8 +12,9 @@ if (!isset($_SESSION['user_id'])) {
   <meta charset="utf-8"/>
   <link rel="stylesheet" href="styles/header.css"/>
   <link rel="stylesheet" href="styles/contribuer.css"/>
-  <title>Page d'accueil</title>
+  <title>Contribuer</title>
 </head>
+
 <body class="white-text">
     <header>
     <div class="principale">
@@ -29,14 +30,13 @@ if (!isset($_SESSION['user_id'])) {
             $user_id = $_SESSION['user_id'];
             echo '<li><a href="#">'.$user_id.'</a></li>';
           } else {
-            echo '<li><a href="Connexion.php">Connexion</a></li>';
+            echo '<li class="active"><a href="Connexion.php">Connexion</a></li>';
           }
         ?>
-          <!-- <li><a href="Connexion.php">Connexion</a></li> -->
         </ul>
       </nav>
       <br>
-       <h1 class="centre">Parcours de randonnée</h1>
+      <h1 class="centre">Parcours de randonnée</h1>
        </div>
     </header>
   
@@ -45,7 +45,8 @@ if (!isset($_SESSION['user_id'])) {
       <section>
         
         <h2>Ajouter une randonnée</h2>
-          <form action="ContribuerBis.php" method="post" enctype="multipart/form-data">
+          
+        <form action="ContribuerBis.php" method="post" enctype="multipart/form-data">
             <p>
               <label for="form-description">Nom de la randonnée :</label>
               <input id="form-nom" type="text" name="nom" size="40" />
@@ -63,9 +64,10 @@ if (!isset($_SESSION['user_id'])) {
               <input id="form-image" type="file" name="image" size="40" />
             </p>
             <p><button type="submit" class="btnAjout">AJOUTER</button></p>
-          </form>
+        </form>
           
       </section>
+
     </main>  
 </body>
 </html>

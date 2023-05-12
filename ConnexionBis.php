@@ -4,7 +4,7 @@
   <meta charset="utf-8"/>
   <link rel="stylesheet" href="styles/header.css"/>
   <link rel="stylesheet" href="styles/connexion.css"/>
-  <title>Page d'accueil</title>
+  <title>Connexion</title>
 </head>
 
 <body class="white-text">

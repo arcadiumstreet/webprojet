@@ -4,13 +4,11 @@
   <meta charset="utf-8"/>
   <link rel="stylesheet" href="styles/header.css"/>
   <link rel="stylesheet" href="styles/connexion.css"/>
-  <title>Page d'accueil</title>
+  <title>Connexion</title>
 </head>
 
 <body class="white-text">
   
-
-
   <header>
     <div class="principale">
       <div class="logo">
@@ -26,7 +24,7 @@
             $user_id = $_SESSION['user_id'];
             echo '<li><a href="#">'.$user_id.'</a></li>';
           } else {
-            echo '<li><a href="Connexion.php">Connexion</a></li>';
+            echo '<li class="active"><a href="Connexion.php">Connexion</a></li>';
           }
         ?>
         <!--<li class="active"><a href="Connexion.php">Connexion</a></li> -->
