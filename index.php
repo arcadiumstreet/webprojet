@@ -22,13 +22,12 @@
           if(isset($_SESSION['user_id'])){
             $user_id = $_SESSION['user_id'];
             echo '<li><a href="#">'.$user_id.'</a></li>';
-            echo '<form method="post" action="logout.php"><button type="submit">Déconnexion</button></form>';
           } else {
             echo '<li><a href="Connexion.php">Connexion</a></li>';
           }
          
-        ?>
-          <!-- <li><a href="Connexion.php">Connexion</a></li> -->
+          ?>
+
         </ul>
       </nav>
     </div>
@@ -93,7 +92,21 @@
     ?>
 
     </section>
+    <div class="deconnect">
+      <?php
+        if(isset($_SESSION['user_id'])){
+          $user_id = $_SESSION['user_id'];
+              
+              echo '<form method="post" action="logout.php"><button class="deconnexion" type="submit">Déconnexion</button></form>';
+            } else {
 
-    </main>
+            }
+      ?>
+    </div>
+
+    
+    <!-- <form class="deconnexion" method="post" action="logout.php"><button type="submit">Déconnexion</button></form> -->
+
+  </main>
 </body>
 </html>

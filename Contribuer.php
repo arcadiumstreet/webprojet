@@ -67,6 +67,18 @@ if (!isset($_SESSION['user_id'])) {
         </form>
           
       </section>
+      
+      <div class="deconnect">
+      <?php
+        if(isset($_SESSION['user_id'])){
+          $user_id = $_SESSION['user_id'];
+              
+              echo '<form method="post" action="logout.php"><button class="deconnexion" type="submit">Déconnexion</button></form>';
+            } else {
+
+            }
+      ?>
+    </div>
 
     </main>  
 </body>

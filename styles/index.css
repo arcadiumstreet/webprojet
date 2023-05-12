@@ -106,3 +106,30 @@ body {
     font-size: 13px;
     font-weight: bold;
 }
+
+.deconnect{
+    position: absolute;
+    top: 92%;
+    left: 94.5%;
+    transform: translate(-50%, -50%);
+}
+
+
+.deconnexion:hover{
+    background-color: #7203d3;
+    cursor: pointer;
+}
+
+.deconnexion:active{
+    background-color: #9e006f;
+  }
+
+.deconnexion{
+    background-color: #ff0101;
+    color: #FFFFFF;
+    padding: 5px;
+    border-radius: 2px;
+    border: none;
+    font-size: 13px;
+    font-weight: bold;
+}
