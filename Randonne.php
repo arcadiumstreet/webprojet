@@ -7,8 +7,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   <title>Randonnée</title>
 </head>
+
 <body class="white-text">
-    <header>
+  <header>
     <div class="principale">
       <div class="logo">
         <a href="index.php"><span class="R">R</span><span>d</span><span class="F">F</span></a>
@@ -31,10 +32,10 @@
       </nav>
     <h1 class="centre">Randonnée : " <?php echo $_GET['nom_rando'] ?> "</h1>
     </div>
-    </header>
+  </header>
 
-    <main>
-      <section>
+  <main>
+    <section>
       <?php
     
       // Récupérer le nom de la randonnée à partir d'un paramètre GET
@@ -95,10 +96,8 @@
         }
       }
 
-// Fermeture de la connexion à la base de données
-mysqli_close($dbh);
-
-
+      // Fermeture de la connexion à la base de données
+      mysqli_close($dbh);
 
       ?>
 
@@ -108,21 +107,21 @@ mysqli_close($dbh);
       <td rowspan="2" style="border : 1px solid #333 "></td>
       </tr>
       <form method="post" action="noter_rando.php">
-    <label for="note">Note : </label>
-    <select name="note" id="note">
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-    </select>
-    <input type="submit" value="Noter">
-    </form>
-
+      <label for="note">Note : </label>
+      <select name="note" id="note">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+      </select>
+      <input type="submit" value="Noter">
+      </form>
       </table>
 
-      </section>
+    </section>
 
-    </main>    
+  </main>    
+
 </body>
 </html>
