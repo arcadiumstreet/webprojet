@@ -111,7 +111,9 @@
               $imageredim = $_FILES['image']['tmp_name'];
               list($width, $height) = getimagesize($imageredim);
               echo "La taille de l'image est de : " . $width . " x " . $height;
+              $t=false;
               if ($width > 700 || $height > 700) {
+                $t =true;
                 while ($width > 700 || $height > 700) {
                   $width = $width * 95 / 100;
                   $height = $height * 95 / 100;
@@ -129,7 +131,10 @@
 
                 // sauvegarde l'image redimensionnée dans un fichier temporaire
                 $tmp_file = $target_dir . 'rando_' . uniqid() . '.' . $extension;
+                if($t == true){
                 imagejpeg($imageredim, $tmp_file);
+                }else {
+                $tmp_file = $imageredim ;}
                 if (rename($tmp_file, $target_file)) {
                   
                   echo "</br>Le fichier a été téléchargé avec succès.";
@@ -139,7 +144,13 @@
                       $stmt->bindParam(':adresse_depart', $adresse_depart);
                       $stmt->execute();
                       echo "</br>La randonnée a été ajoutée avec succès !";
+
+                     // echo '<td><a href="Randonne.php?nom_rando=' . $row['Nom'] . '">' . $row['Nom'] . '</a></td>';
+                      echo '<br><nav><ul><li><a href="Randonne.php?nom_rando=' . $nom_rando . '"> Voir votre randonnée ajoutée </a></li></ul></nav>';
+
+                     if($t == true){
                       imagedestroy($imageredim);
+                      }
                 } else {
                   echo "Une erreur s'est produite lors du téléchargement du fichier.";
                 }
