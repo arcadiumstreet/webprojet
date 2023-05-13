@@ -23,6 +23,10 @@
     font-size: 2rem;
 }
 
+.logo .D{
+    color: #fff;
+}
+
 .principale{
     max-width: 114rem;
     margin: 0 auto;

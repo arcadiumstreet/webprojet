@@ -42,7 +42,7 @@
 
 </br>
 
-  <main >
+  <main>
 
     <form class="selectTri" method="get">
       <button class="tributton" type="submit" name="tri_nom">Trier par nom</button>
@@ -76,7 +76,7 @@
       $dbh = null;
 
       echo "<table style='border-collapse: separate '>";
-      echo "<tr style='color: blue'> 
+      echo "<tr style='color: #0191ff'> 
               <th> Nom </th>
               <th> adresse_depart </th>
               <th> Score </th>

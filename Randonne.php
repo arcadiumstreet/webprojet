@@ -12,7 +12,7 @@
   <header>
     <div class="principale">
       <div class="logo">
-        <a href="index.php"><span class="R">R</span><span>d</span><span class="F">F</span></a>
+        <a href="index.php"><span class="R">R</span><span class="D">d</span><span class="F">F</span></a>
       </div>
       <nav>
         <ul>
@@ -27,7 +27,6 @@
             echo '<li><a href="Connexion.php">Connexion</a></li>';
           }
         ?>
-          <!-- <li><a href="Connexion.php">Connexion</a></li> -->
         </ul>
       </nav>
     <h1 class="centre">Randonnée : " <?php echo $_GET['nom_rando'] ?> "</h1>
@@ -56,11 +55,10 @@
           // Un seul résultat a été trouvé
           $row = mysqli_fetch_assoc($resultat);
           // Utilisez les données du résultat ici
-                                            //echo "Nom randonnée : " . $row["Nom"] . ", Description : " . $row["Description"];
           echo "<br>";
-          echo "Description : " . $row["Description"] . "<br>";
+          echo "<p>Description </p> : " . $row["Description"] . "<br>";
           echo "<br>";
-          echo "Adresse Point de départ : " . $row["adresse_depart"]. "<br>";
+          echo "<p>Adresse Point de départ </p> : " . $row["adresse_depart"]. "<br>";
           echo "<br>";
 
           $rando_nom = $_GET['nom_rando'];
@@ -73,10 +71,11 @@
             echo "Aucune image trouvée pour cette randonnée" . "<br>";
           }
 
+          echo "</br>";
           
           //echo "score de popularité : " . $row["Score"];
           $score = $row["Score"];
-          echo "Score de popularité : ";
+          echo "<p>Score de popularité </p> : ";
           for ($i = 1; $i <= 5; $i++) {
             if ($i <= floor($score)) {
               // Afficher une étoile pleine
@@ -101,13 +100,14 @@
 
       ?>
 
+      </br>
+
       <table>
       <tr>
-
       <td rowspan="2" style="border : 1px solid #333 "></td>
       </tr>
       <form method="post" action="noter_rando.php?nom_rando=<?php echo $row['Nom']; ?>">
-      <label for="note">Note : </label>
+      <label for="note"><p>Pour noter </p> : </label>
       <select name="note" id="note">
           <option value="1">1</option>
           <option value="2">2</option>
@@ -115,12 +115,29 @@
           <option value="4">4</option>
           <option value="5">5</option>
       </select>
+        <span> -- </span>
       <input type="submit" value="Noter">
       </form>
       
       </table>
 
     </section>
+
+    </br>
+
+    <div class="deconnect">
+      <?php
+        if(isset($_SESSION['user_id'])){
+          $user_id = $_SESSION['user_id'];
+              
+              echo '<form method="post" action="logout.php"><button class="deconnexion" type="submit">Déconnexion</button></form>';
+            } else {
+
+            }
+      ?>
+    </div>
+          </br>
+          </br>
 
   </main>    
 

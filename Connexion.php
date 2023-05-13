@@ -12,7 +12,7 @@
   <header>
     <div class="principale">
       <div class="logo">
-        <a href="index.php"><span class="R">R</span><span>d</span><span class="F">F</span></a>
+        <a href="index.php"><span class="R">R</span><span class="D">d</span><span class="F">F</span></a>
       </div>
       <nav>
       <ul>

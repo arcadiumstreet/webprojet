@@ -19,7 +19,7 @@ if (!isset($_SESSION['user_id'])) {
   <header>
     <div class="principale">
       <div class="logo">
-        <a href="index.php"><span class="R">R</span><span>d</span><span class="F">F</span></a>
+        <a href="index.php"><span class="R">R</span><span class="D">d</span><span class="F">F</span></a>
       </div>
       <nav>
         <ul>
@@ -45,24 +45,29 @@ if (!isset($_SESSION['user_id'])) {
       <section>
         
         <h2>Ajouter une randonnée : </h2>
+        </br>
           
         <form action="ContribuerBis.php" method="post" enctype="multipart/form-data">
             <p>
-              <label for="form-description">Nom de la randonnée :</label>
+              <label for="form-description"><p style="display: inline; font-weight: bold">Nom</p> de la randonnée  : </label>
               <input id="form-nom" type="text" name="nom" size="40" />
             </p>
+        </br>
             <p>
-              <label for="form-description">Description de la randonnée :</label>
+              <label for="form-description"><p style="display: inline; font-weight: bold">Description</p> de la randonnée :</label>
               <input id="form-description" type="text" name="description" size="40" />
             </p>
+            </br>
             <p>
-              <label for="form-adresse">Adresse du point de départ :</label>
+              <label for="form-adresse"><p style="display: inline; font-weight: bold">Adresse</p> du point de départ :</label>
               <input id="form-adresse" type="text" name="adresse_depart" size="40" />
             </p>
+            </br>
             <p>
-              <label for="form-image">Image :</label>
+              <label for="form-image"><p style="display: inline; font-weight: bold">Image</p> :</label>
               <input id="form-image" type="file" name="image" size="40" />
             </p>
+            </br>
             <p><button type="submit" class="btnAjout">AJOUTER</button></p>
         </form>
           

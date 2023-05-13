@@ -27,3 +27,73 @@ main {
   transform: translate(-50%, -50%);
   height: 350px;;           /* attention !!!!  ici si il est trop grand on pourra scroller sur la page alors que l'on en a pas besoin */
 }
+
+/*
+.deconnect{
+  position: relative;
+  top: 0%;
+  left: 180%;
+  transform: translate(-50%, -50%);
+}
+*/
+
+.deconnexion:hover{
+  background-color: #7203d3;
+  cursor: pointer;
+}
+
+.deconnexion:active{
+  background-color: #9e006f;
+}
+
+.deconnexion{
+  background-color: #ff0101;
+  color: #FFFFFF;
+  padding: 5px;
+  border-radius: 2px;
+  border: none;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+span{
+  color: #ffea02;
+}
+
+section{
+  color:#FFFFFF;
+  font-size: 17px;
+}
+
+p {
+  display: inline;
+  text-decoration: underline;
+}
+
+input[type="submit"] {
+  content: 'Choisir un fichier';
+  color: #ffffff;
+  background-color: #006e0d;
+  border: none;
+  padding: 2px 2px;
+  outline: none;
+  display: inline-block;
+  white-space: nowrap;
+  /*-webkit-user-select: none;        Pour éviter la sélection de texte mais provoque une erreur*/
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+  background-color: #00911d;
+}
+
+input[type="submit"]:active {
+  background-color: #00c31a;
+}
+select{
+  
+  border-radius: 3px;
+}

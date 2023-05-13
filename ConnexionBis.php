@@ -11,7 +11,7 @@
   <header>
     <div class="principale">
       <div class="logo">
-        <a href="index.php"><span class="R">R</span><span>d</span><span class="F">F</span></a>
+        <a href="index.php"><span class="R">R</span><span class="D">d</span><span class="F">F</span></a>
       </div>
       <nav>
       <ul>
@@ -74,7 +74,7 @@
           $_SESSION['user_id'] = $id;  // pareil que plus haut : on enregistre l'identifiant de l'utilisateur dans la variable session
           echo "Bienvenue " . $id . ", ça fait plaisir de vous revoir.";
       }else {
-        echo "Vous vous êtes jamais connecté. <br/> Créer un compte en cochant la case 'première connexion' .<br><nav><ul><li><a href='Connexion.php'>reéssayer</a></li></ul></nav>";
+        echo "Vous ne vous êtes jamais connecté. <br/> Créer un compte en cochant la case 'première connexion' .<br><nav><ul><li><a href='Connexion.php'>reéssayer</a></li></ul></nav>";
       }
 }
         ?>
