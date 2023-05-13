@@ -73,7 +73,6 @@
 
           echo "</br>";
           
-          //echo "score de popularité : " . $row["Score"];
           $score = $row["Score"];
           echo "<p>Score de popularité </p> : ";
           for ($i = 1; $i <= 5; $i++) {
@@ -115,7 +114,7 @@
           <option value="4">4</option>
           <option value="5">5</option>
       </select>
-        <span> -- </span>
+        <span> >>> </span>
       <input type="submit" value="Noter">
       </form>
       

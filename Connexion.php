@@ -31,17 +31,18 @@
     </nav>
   </div>
     <h1 class="centre">Connectez vous pour ajouter des randonnées</h1>
-    </div>
   </header>
 
   <main>
       <section>
         <h2>Connexion : </h2>
+        </br>
             <form action="ConnexionBis.php" method="post">
               Identifiant : <input type="text" size="16" name="id" />
               <input type="submit" value="Se connecter" />
               </br>
-              Premiere connexion : <input type="checkbox" name = "premiere" id = "premiere">
+              </br>
+              Première connexion : <input type="checkbox" name = "premiere" id = "premiere">
             </form>
       </section>
   </main>

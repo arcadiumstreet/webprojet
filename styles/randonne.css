@@ -25,17 +25,8 @@ main {
   top: 65%;
   left: 40%;
   transform: translate(-50%, -50%);
-  height: 350px;;           /* attention !!!!  ici si il est trop grand on pourra scroller sur la page alors que l'on en a pas besoin */
+  height: 350px;
 }
-
-/*
-.deconnect{
-  position: relative;
-  top: 0%;
-  left: 180%;
-  transform: translate(-50%, -50%);
-}
-*/
 
 .deconnexion:hover{
   background-color: #7203d3;
@@ -75,11 +66,10 @@ input[type="submit"] {
   color: #ffffff;
   background-color: #006e0d;
   border: none;
-  padding: 2px 2px;
+  padding: 4px 4px;
   outline: none;
   display: inline-block;
   white-space: nowrap;
-  /*-webkit-user-select: none;        Pour éviter la sélection de texte mais provoque une erreur*/
   cursor: pointer;
   font-size: 16px;
   font-weight: 700;
@@ -94,6 +84,7 @@ input[type="submit"]:active {
   background-color: #00c31a;
 }
 select{
-  
+  background-color: rgb(79, 79, 79);
+  color: #FFFFFF;
   border-radius: 3px;
 }

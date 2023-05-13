@@ -5,7 +5,7 @@
     font-family: century;
   }
   
-  body {
+body {
     background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(./../photos/automne.jpg);
     background-attachment: fixed ;
     height: 100vh;
@@ -13,8 +13,7 @@
     background-position: center;
 }
   
-  
-  .centre{
+.centre{
     position: absolute;
     top: 30%;
     left: 50%;
@@ -26,7 +25,7 @@
     top: 65%;
     left: 40%;
     transform: translate(-50%, -50%);
-    height: 350px;;           /* attention !!!!  ici si il est trop grand on pourra scroller sur la page alors que l'on en a pas besoin */
+    height: 350px;
   }
 
 
@@ -44,7 +43,6 @@
     outline: none;
     display: inline-block;
     white-space: nowrap;
-    /*-webkit-user-select: none;        Pour éviter la sélection de texte mais provoque une erreur*/
     cursor: pointer;
     font-size: 16px;
     font-weight: 700;
@@ -56,16 +54,15 @@
   }
   
   input[type="file"]:active::before {
-    background-color: #FFA07A;
+    background-color: #ff5d1d;
   }
 
-  .deconnect{
+.deconnect{
     position: absolute;
     top: 105%;
     left: 210%;
     transform: translate(-50%, -50%);
 }
-
 
 .deconnexion:hover{
     background-color: #7203d3;
@@ -92,11 +89,22 @@ h2 {
 
 .btnAjout{
   background-color: #f14400;
-    color: #000000;
+    color: #260047;
     padding: 5px;
-    border-radius: 2px;
+    border-radius: 20px;
     border: none;
     font-size: 13px;
     font-weight: bold;
 }
 
+.btnAjout:hover{
+  background-color: #ee2c00;
+}
+
+.btnAjout:active{
+  background-color: #e71c01;
+}
+
+section{
+  font-size: 17px;
+}

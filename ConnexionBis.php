@@ -21,10 +21,10 @@
       </ul>
     </nav>
   </div>    
-    </div>
   </header>
-    <main>
-      <section>
+
+  <main>
+    <section>
         <h2>
         <?php 
 
@@ -79,7 +79,8 @@
 }
         ?>
         </h2>
-      </section>
-    </main>
+    </section>
+  </main>
+  
 </body>
 </html>

@@ -5,7 +5,6 @@
   font-family: century;
 }
 
-
 body {
   background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(./../photos/etoiles.jpeg);
   background-attachment: fixed ;
@@ -19,19 +18,22 @@ main {
   top: 65%;
   left: 40%;
   transform: translate(-50%, -50%);
-  height: 350px;;           /* attention !!!!  ici si il est trop grand on pourra scroller sur la page alors que l'on en a pas besoin */
+  height: 350px;           
 }
 
+h2 {
+  text-decoration: underline;
+}
+
+form{
+  font-size: 17px;
+}
 
 .centre{
   position: absolute;
   top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-
-input[type="submit"]::-webkit-file-upload-button {
-  visibility: hidden;
 }
 
 input[type="submit"] {

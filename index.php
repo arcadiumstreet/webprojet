@@ -27,7 +27,6 @@
           }
          
           ?>
-
         </ul>
       </nav>
     </div>
@@ -43,7 +42,6 @@
 </br>
 
   <main>
-
     <form class="selectTri" method="get">
       <button class="tributton" type="submit" name="tri_nom">Trier par nom</button>
       <button class="tributton" type="submit" name="tri_score">Trier par score</button>
@@ -90,8 +88,8 @@
       }
       echo "</table>";
     ?>
-
     </section>
+
     <div class="deconnect">
       <?php
         if(isset($_SESSION['user_id'])){
@@ -103,10 +101,7 @@
             }
       ?>
     </div>
-
-    
-    <!-- <form class="deconnexion" method="post" action="logout.php"><button type="submit">Déconnexion</button></form> -->
-
   </main>
+
 </body>
 </html>
